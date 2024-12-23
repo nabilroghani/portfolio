@@ -123,6 +123,10 @@ header .navbar ul li a.active::after {
 }
 
 /* hero Section */
+section {
+  padding: 2% 10%;
+}
+
 .hero-container {
   position: relative;
   display: flex;
@@ -241,4 +245,38 @@ header .navbar ul li a.active::after {
 
 .btn:hover::before {
   width: 100%;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stats .stat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.stats .stat h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.stats .stat span {
+  display: inline-block;
+  color: var(--light-text-clr);
+  font-size: 1.1rem;
+}
+
+.stats .stat:not(:last-child) {
+  border-right: 1px solid var(--light-text-clr);
+  padding-right: 5%;
 }
