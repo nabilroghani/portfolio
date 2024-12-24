@@ -280,3 +280,9 @@ section {
   border-right: 1px solid var(--light-text-clr);
   padding-right: 5%;
 }
+
+.hero-content-animation>* {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: calc(0.5s * var(--i));
+}
